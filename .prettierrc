@@ -1,0 +1,15 @@
+{
+  "plugins": ["prettier-plugin-sql"],
+  "overrides": [
+    {
+      "files": "sql/*.sql",
+      "options": {
+        "parser": "sql",
+        "formatter": "sql-formatter",
+        "language": "sql",
+        "keywordCase": "upper",
+        "tabWidth": 4
+      }
+    }
+  ]
+}
