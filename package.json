@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "format": "pnpx prettier --write \"sql/**/*.sql\""
+    "format": "pnpx prettier --write \"sql/**/*.sql\"",
+    "db:exec": "psql -h localhost -U user -d db -f",
+    "db:shell": "psql -h localhost -U user -d db"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.17.1",
+  "packageManager": "pnpm@10.24.0",
   "devDependencies": {
     "prettier": "^3.7.4",
     "prettier-plugin-sql": "^0.19.2"
