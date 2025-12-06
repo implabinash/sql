@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "format": "pnpx prettier --write \"sql/**/*.sql\"",
-    "db:exec": "psql -h localhost -U user -d db -f",
-    "db:shell": "psql -h localhost -U user -d db"
+    "db:exec": "psql postgresql://user:password@localhost:5432/db -f",
+    "db:shell": "psql postgresql://user:password@localhost:5432/db"
   },
   "keywords": [],
   "author": "",
