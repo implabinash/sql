@@ -1,4 +1,1 @@
-SELECT
-    *
-FROM
-    public.customers;
+select * from public.customers;
